@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy to Clipboard</title>
+    <script>
+        function copyToClipboard() {
+            const textToCopy = "DTPBsocial.DGPTNsociale@gmail.com"; // Replace with your content
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Text copied to clipboard!");
+            }).catch(err => {
+                console.error("Could not copy text: ", err);
+            });
+        }
+
+        window.onload = copyToClipboard; // Call the function on page load
+    </script>
+</head>
+<body>
+    <h1>Copying Text...</h1>
+</body>
+</html>
