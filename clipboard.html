@@ -16,7 +16,10 @@
             }
         }
 
-        window.onload = copyToClipboard; // Call the function on page load
+        window.onload = () => {
+            // Wait for a short time before copying
+            setTimeout(copyToClipboard, 100);
+        };
     </script>
 </head>
 <body>
