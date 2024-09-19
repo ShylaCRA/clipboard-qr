@@ -13,16 +13,13 @@
                 alert("Text copied to clipboard!");
             } catch (err) {
                 console.error("Failed to copy: ", err);
+                alert("Failed to copy. Please try again.");
             }
         }
-
-        window.onload = () => {
-            // Wait for a short time before copying
-            setTimeout(copyToClipboard, 100);
-        };
     </script>
 </head>
 <body>
-    <h1>Copying Text...</h1>
+    <h1>Click the button to copy text to clipboard:</h1>
+    <button onclick="copyToClipboard()">Copy Text</button>
 </body>
 </html>
