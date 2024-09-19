@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 CRA Charitable Campaign</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/mnt/data/379FF93E-FCEE-4FD9-A8B3-D7399D2E6770.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h3 {
+            color: #666;
+        }
+
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .copy-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
+
+        .brand-image {
+            max-width: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>2024 CRA Charitable Campaign</h1>
+        <h3>eTRANSFER email: DTPBsocial.DGPNsociale@gmail.com</h3>
+        <div class="button-container">
+            <button class="copy-btn" onclick="copyToClipboard()">Copy Email</button>
+        </div>
+        <h3>Provide Password: DTPB</h3>
+        <img src="/mnt/data/379FF93E-FCEE-4FD9-A8B3-D7399D2E6770.jpeg" alt="Brand" class="brand-image">
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const email = 'DTPBsocial.DGPNsociale@gmail.com';
+            navigator.clipboard.writeText(email).then(() => {
+                alert('Email copied to clipboard: ' + email);
+            });
+        }
+    </script>
+
+</body>
+</html>
